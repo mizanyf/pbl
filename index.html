@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KasKu - Sistem Keuangan Organisasi</title>
+    <title>MoneFlo - Sistem Keuangan Organisasi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -53,7 +53,14 @@
 <!-- LOGIN -->
 <div id="auth-login" class="auth-bg flex items-center justify-center p-4">
     <div class="w-full max-w-md relative z-10">
-        <div class="text-center mb-8"><div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur mb-4"><i class="fas fa-building text-2xl text-white"></i></div><h1 class="text-3xl font-display font-bold text-white">KasKu</h1><p class="text-white/60 mt-1 text-sm">Sistem Keuangan Organisasi</p></div>
+        <div class="text-center mb-8">
+            <!-- Logo MoneFlo (JPEG) -->
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur mb-4 p-2">
+                <img src="https://z-cdn-media.chatglm.cn/files/cb7ad86d-2700-4f62-aa9a-1c9245c1fd49.jpeg?auth_key=1875311037-0bef5a6f0fdf46dda5a0618cb8875889-0-0ce648773f2714ea6f5ecf8e7a0bf8f3" alt="Logo MoneFlo" class="w-full h-full object-contain">
+            </div>
+            <h1 class="text-3xl font-display font-bold text-white">MoneFlo</h1>
+            <p class="text-white/60 mt-1 text-sm">Sistem Keuangan Organisasi</p>
+        </div>
         <div class="bg-white rounded-2xl shadow-2xl p-8">
             <h2 class="text-xl font-bold text-primary mb-1">Masuk Akun Organisasi</h2><p class="text-sm text-neutral mb-6">Kelola keuangan organisasi Anda dengan mudah.</p>
             <div class="space-y-4">
@@ -70,7 +77,14 @@
 <!-- LUPA SANDI -->
 <div id="auth-forgot" class="auth-bg flex items-center justify-center p-4 hidden">
     <div class="w-full max-w-md relative z-10">
-        <div class="text-center mb-8"><div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur mb-4"><i class="fas fa-key text-2xl text-white"></i></div><h1 class="text-3xl font-display font-bold text-white">KasKu</h1><p class="text-white/60 mt-1 text-sm">Pemulihan Kata Sandi</p></div>
+        <div class="text-center mb-8">
+            <!-- Logo MoneFlo (JPEG) -->
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur mb-4 p-2">
+                <img src="https://z-cdn-media.chatglm.cn/files/cb7ad86d-2700-4f62-aa9a-1c9245c1fd49.jpeg?auth_key=1875311037-0bef5a6f0fdf46dda5a0618cb8875889-0-0ce648773f2714ea6f5ecf8e7a0bf8f3" alt="Logo MoneFlo" class="w-full h-full object-contain">
+            </div>
+            <h1 class="text-3xl font-display font-bold text-white">MoneFlo</h1>
+            <p class="text-white/60 mt-1 text-sm">Pemulihan Kata Sandi</p>
+        </div>
         <div class="bg-white rounded-2xl shadow-2xl p-8">
             <div id="forgot-step-1"><h2 class="text-xl font-bold text-primary mb-1">Lupa Kata Sandi?</h2><p class="text-sm text-neutral mb-6">Masukkan email organisasi yang terdaftar.</p><div class="space-y-4"><div><label class="block text-sm font-medium text-neutral-dark mb-1.5">Email Terdaftar</label><input id="forgot-email" type="email" placeholder="nama@organisasi.com" class="input-styled w-full px-4 py-3 border border-neutral-light rounded-xl text-sm outline-none transition-all"></div><button type="button" onclick="handleForgotStep1()" class="w-full py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-light transition-colors">Kirim Kode Verifikasi</button></div></div>
             <div id="forgot-step-2" class="hidden"><h2 class="text-xl font-bold text-primary mb-1">Masukkan Kode Verifikasi</h2><p class="text-sm text-neutral mb-1">Kode dikirim ke <strong id="forgot-email-display" class="text-primary"></strong></p><p class="text-xs text-neutral mb-6">Kode berlaku 5 menit. <button type="button" onclick="handleResendCode()" class="text-tertiary font-semibold hover:text-tertiary-dark">Kirim ulang</button></p><div class="space-y-4"><div><label class="block text-sm font-medium text-neutral-dark mb-1.5">Kode 6 Digit</label><div class="flex gap-2 justify-center" id="otp-inputs"></div></div><button type="button" onclick="handleForgotStep2()" class="w-full py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-light transition-colors">Verifikasi Kode</button></div></div>
@@ -84,7 +98,14 @@
 <!-- REGISTER (ORGANISASI ONLY) -->
 <div id="auth-register" class="auth-bg flex items-center justify-center p-4 hidden">
     <div class="w-full max-w-md relative z-10">
-        <div class="text-center mb-8"><div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur mb-4"><i class="fas fa-building text-2xl text-white"></i></div><h1 class="text-3xl font-display font-bold text-white">KasKu</h1><p class="text-white/60 mt-1 text-sm">Daftarkan Organisasi Anda</p></div>
+        <div class="text-center mb-8">
+            <!-- Logo MoneFlo (JPEG) -->
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur mb-4 p-2">
+                <img src="https://z-cdn-media.chatglm.cn/files/cb7ad86d-2700-4f62-aa9a-1c9245c1fd49.jpeg?auth_key=1875311037-0bef5a6f0fdf46dda5a0618cb8875889-0-0ce648773f2714ea6f5ecf8e7a0bf8f3" alt="Logo MoneFlo" class="w-full h-full object-contain">
+            </div>
+            <h1 class="text-3xl font-display font-bold text-white">MoneFlo</h1>
+            <p class="text-white/60 mt-1 text-sm">Daftarkan Organisasi Anda</p>
+        </div>
         <div class="bg-white rounded-2xl shadow-2xl p-8">
             <h2 class="text-xl font-bold text-primary mb-1">Buat Akun Organisasi</h2><p class="text-sm text-neutral mb-6">Lengkapi data identitas organisasi di bawah ini.</p>
             <div id="form-org" class="space-y-4">
@@ -106,7 +127,18 @@
 <div id="app" class="hidden">
     <div id="sidebar-overlay" class="sidebar-overlay fixed inset-0 bg-black/40 z-[45] hidden lg:hidden" onclick="toggleSidebar()"></div>
     <aside id="sidebar" class="sidebar bg-primary">
-        <div class="px-6 py-5 border-b border-white/10 flex-shrink-0"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-tertiary flex items-center justify-center flex-shrink-0"><i class="fas fa-wallet text-white text-sm"></i></div><div><h1 class="font-display font-bold text-white text-lg leading-tight">KasKu</h1><p class="text-white/40 text-[10px] tracking-wider uppercase">Keuangan Organisasi</p></div></div></div>
+        <!-- Logo MoneFlo (JPEG) in Sidebar -->
+        <div class="px-6 py-5 border-b border-white/10 flex-shrink-0">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                     <img src="https://z-cdn-media.chatglm.cn/files/cb7ad86d-2700-4f62-aa9a-1c9245c1fd49.jpeg?auth_key=1875311037-0bef5a6f0fdf46dda5a0618cb8875889-0-0ce648773f2714ea6f5ecf8e7a0bf8f3" alt="MoneFlo Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <h1 class="font-display font-bold text-white text-lg leading-tight">MoneFlo</h1>
+                    <p class="text-white/40 text-[10px] tracking-wider uppercase">Keuangan Organisasi</p>
+                </div>
+            </div>
+        </div>
         <nav class="flex-1 py-4 px-3 space-y-1 overflow-y-auto">
             <button type="button" onclick="navigateTo('beranda')" class="nav-item active w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm text-white/70" data-page="beranda"><i class="fas fa-home w-5 text-center"></i><span>Beranda</span></button>
             <button type="button" onclick="navigateTo('transaksi')" class="nav-item w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm text-white/70" data-page="transaksi"><i class="fas fa-exchange-alt w-5 text-center"></i><span>Transaksi</span></button>
@@ -379,11 +411,15 @@
 <div id="toast-container" class="fixed top-4 right-4 z-[100] space-y-2"></div>
 
 <script>
+// URL Logo MoneFlo Baru
+const LOGO_MONEFLO = "https://z-cdn-media.chatglm.cn/files/cb7ad86d-2700-4f62-aa9a-1c9245c1fd49.jpeg?auth_key=1875311037-0bef5a6f0fdf46dda5a0618cb8875889-0-0ce648773f2714ea6f5ecf8e7a0bf8f3";
+
 var TODAY = new Date(2024, 9, 25);
 var state = {
     currentPage:'login', currentTimeFilter:'minggu', currentTypeFilter:'semua',
     charts:{}, uploadedFiles:[], profileEditOpen:false, forgotEmail:'',
-    profile:{name:'BEM Fakultas Furap', type:'Kemahasiswaan', email:'bem.furap@univ.ac.id', phone:'0812-3456-7890', photo:null, description:'BEM Fakultas Furap merupakan badan eksekutif mahasiswa.'},
+    // Set default foto profil ke Logo MoneFlo
+    profile:{name:'BEM Fakultas Furap', type:'Kemahasiswaan', email:'bem.furap@univ.ac.id', phone:'0812-3456-7890', photo:LOGO_MONEFLO, description:'BEM Fakultas Furap merupakan badan eksekutif mahasiswa.'},
     transactions:[
         {id:1,date:'2024-10-25',desc:'Pembelian Banner Dies Natalis',cat:'Event',type:'pengeluaran',amount:350000,status:'DIPROSES',docs:[]},
         {id:2,date:'2024-10-24',desc:'Iuran Anggota Minggu Ini',cat:'Operasional',type:'pemasukan',amount:800000,status:'SELESAI',docs:[]},
@@ -453,7 +489,10 @@ function openOrgPanel(){openModal('modal-org-info');}
 
 function renderOrgPanel(){
     var o=state.profile;
-    document.getElementById('org-info-header').innerHTML='<div class="bg-gradient-to-br from-primary via-primary-light to-tertiary px-6 pt-8 pb-10 text-center"><div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center text-white text-3xl font-bold mx-auto ring-4 ring-white/20 shadow-lg" id="panel-logo-img-wrap">'+(o.photo?'<img src="'+o.photo+'" class="w-full h-full object-cover rounded-2xl">':getInitials(o.name))+'</div><h4 class="text-xl font-bold text-white mt-4">'+o.name+'</h4><p class="text-white/70 text-sm mt-1">'+o.type+'</p></div>';
+    // Gunakan logo MoneFlo jika ada foto, atau inisial
+    var logoHtml = o.photo ? '<img src="'+o.photo+'" class="w-full h-full object-cover rounded-2xl">' : getInitials(o.name);
+    
+    document.getElementById('org-info-header').innerHTML='<div class="bg-gradient-to-br from-primary via-primary-light to-tertiary px-6 pt-8 pb-10 text-center"><div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center text-white text-3xl font-bold mx-auto ring-4 ring-white/20 shadow-lg overflow-hidden" id="panel-logo-img-wrap">'+logoHtml+'</div><h4 class="text-xl font-bold text-white mt-4">'+o.name+'</h4><p class="text-white/70 text-sm mt-1">'+o.type+'</p></div>';
     document.getElementById('org-info-grid').innerHTML='<div class="grid grid-cols-3 gap-3"><div class="bg-neutral-50 rounded-xl p-3.5 text-center"><div class="flex items-center justify-center gap-1.5 mb-1.5"><i class="fas fa-users text-tertiary text-xs"></i><span class="text-[10px] font-semibold text-neutral uppercase tracking-wider">Anggota</span></div><p class="font-display font-bold text-xl text-primary-dark">'+state.members.length+'</p></div><div class="bg-neutral-50 rounded-xl p-3.5"><div class="flex items-center gap-1.5 mb-1.5"><i class="fas fa-envelope text-tertiary text-xs"></i><span class="text-[10px] font-semibold text-neutral uppercase tracking-wider">Email</span></div><p class="text-xs font-medium text-neutral-dark truncate">'+o.email+'</p></div><div class="bg-neutral-50 rounded-xl p-3.5"><div class="flex items-center gap-1.5 mb-1.5"><i class="fas fa-phone text-tertiary text-xs"></i><span class="text-[10px] font-semibold text-neutral uppercase tracking-wider">Telepon</span></div><p class="text-xs font-medium text-neutral-dark">'+o.phone+'</p></div></div>';
     document.getElementById('org-info-desc').innerHTML='<h5 class="text-xs font-semibold text-neutral uppercase tracking-wider mb-2">Deskripsi</h5><p class="text-sm text-neutral-dark leading-relaxed">'+o.description+'</p>';
     var html='<h5 class="text-xs font-semibold text-neutral uppercase tracking-wider mb-3">Daftar Anggota</h5><div class="space-y-1.5 max-h-[240px] overflow-y-auto pr-1">';
@@ -734,7 +773,7 @@ function initLaporan(){renderArusKasChart();renderAlokasiPct();applyFilters();}
 function renderArusKasChart(){if(state.charts.arusKas)state.charts.arusKas.destroy();state.charts.arusKas=new Chart(document.getElementById('chart-arus-kas').getContext('2d'),{type:'line',data:{labels:['Mei','Jun','Jul','Agu','Sep','Okt'],datasets:[{label:'Pemasukan',data:[5200000,4800000,6500000,5800000,7200000,8400000],borderColor:'#00695C',backgroundColor:'rgba(0,105,92,0.08)',fill:true,tension:0.4,pointRadius:4,pointBackgroundColor:'#00695C',borderWidth:2},{label:'Pengeluaran',data:[3100000,2800000,4200000,3600000,4800000,5300000],borderColor:'#083D56',backgroundColor:'rgba(8,61,86,0.08)',fill:true,tension:0.4,pointRadius:4,pointBackgroundColor:'#083D56',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{usePointStyle:true,pointStyle:'circle',padding:16,font:{family:'Plus Jakarta Sans',size:12}}}},scales:{y:{beginAtZero:true,max:10000000,ticks:{callback:function(v){return 'Rp'+(v/1000000).toFixed(0)+'jt';},font:{family:'Space Grotesk',size:11},color:'#767779',stepSize:2000000},grid:{color:'rgba(118,119,121,0.1)'}},x:{ticks:{font:{family:'Plus Jakarta Sans',size:12},color:'#424242'},grid:{display:false}}}}});}
 function renderAlokasiPct(){var c=document.getElementById('alokasi-pct-list'),total=0;for(var i=0;i<state.allocations.length;i++)total+=state.allocations[i].amount;document.getElementById('alokasi-total').textContent=formatRupiah(total);var html='';for(var j=0;j<state.allocations.length;j++){var a=state.allocations[j],pct=total>0?Math.round(a.amount/total*100):0;html+='<div><div class="flex justify-between items-center mb-1.5"><span class="text-sm font-medium text-neutral-dark">'+a.name+'</span><span class="text-xs font-semibold text-neutral">'+pct+'% &middot; '+formatRupiah(a.amount)+'</span></div><div class="pct-bar-track"><div class="pct-bar-fill" style="width:0%;background:'+a.color+'" data-width="'+pct+'%"></div></div></div>';}c.innerHTML=html;setTimeout(function(){c.querySelectorAll('.pct-bar-fill').forEach(function(el){el.style.width=el.dataset.width;});},150);}
 
-function exportCSV(){var result=getFiltered(),filtered=result.filtered;if(state.currentTypeFilter!=='semua')filtered=filtered.filter(function(t){return t.type===state.currentTypeFilter;});filtered.sort(function(a,b){return new Date(b.date)-new Date(a.date);});var csv='Tanggal,Deskripsi,Kategori,Tipe,Jumlah,Status\n';for(var i=0;i<filtered.length;i++){var t=filtered[i];csv+='"'+t.date+'","'+t.desc+'","'+t.cat+'","'+t.type+'",'+t.amount+',"'+t.status+'"\n';}var blob=new Blob([csv],{type:'text/csv;charset=utf-8;'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='laporan_kasku_'+new Date().toISOString().slice(0,10)+'.csv';link.click();URL.revokeObjectURL(url);showToast('File CSV berhasil diunduh','success');}
+function exportCSV(){var result=getFiltered(),filtered=result.filtered;if(state.currentTypeFilter!=='semua')filtered=filtered.filter(function(t){return t.type===state.currentTypeFilter;});filtered.sort(function(a,b){return new Date(b.date)-new Date(a.date);});var csv='Tanggal,Deskripsi,Kategori,Tipe,Jumlah,Status\n';for(var i=0;i<filtered.length;i++){var t=filtered[i];csv+='"'+t.date+'","'+t.desc+'","'+t.cat+'","'+t.type+'",'+t.amount+',"'+t.status+'"\n';}var blob=new Blob([csv],{type:'text/csv;charset=utf-8;'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='laporan_moneflo_'+new Date().toISOString().slice(0,10)+'.csv';link.click();URL.revokeObjectURL(url);showToast('File CSV berhasil diunduh','success');}
 function exportPDF(){window.print();showToast('Dialog cetak dibuka','info');}
 
 updateNotifBadge();
